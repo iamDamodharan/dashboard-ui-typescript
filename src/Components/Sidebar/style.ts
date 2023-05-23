@@ -51,9 +51,13 @@ export const LI = styled.li`
     font-weight: regular;
     transition:all 0.15s linear;
     cursor:pointer;
+    margin: 4px 0px;
+    &.active {
+        background-color: #008CBA;
+    }
     &:hover{
-        background-color: #fff;
-        color: #000;
+        background-color: #008CBA;
+        color: #000000;
     }
     &:focus{
         outline:none;

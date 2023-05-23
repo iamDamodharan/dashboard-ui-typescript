@@ -17,7 +17,7 @@ const OverlayForm = (props: IProps) => {
     useEffect(() => {
         setTitile(post.title);
         setBody(post.body);
-    }, [show]);
+    }, [props]);
 
     const onClickSubmit = () => {
         if (onSubmit) onSubmit({ title: title, body: body, id: post.id, userId: 1 });
